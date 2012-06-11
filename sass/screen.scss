@@ -1,0 +1,207 @@
+@import "compass/reset";
+
+/* =========================================================================
+	GLOBAL
+   ====================================================================== */
+
+   @font-face {
+       font-family: 'AdelleBasicBold';
+       src: url('../fonts/adellebasic_bold-webfont.eot');
+       src: url('../fonts/adellebasic_bold-webfont.eot?#iefix') format('eot'),
+            url('../fonts/adellebasic_bold-webfont.woff') format('woff'),
+            url('../fonts/adellebasic_bold-webfont.ttf') format('truetype'),
+            url('../fonts/adellebasic_bold-webfont.svg#webfont8vHlRqVr') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
+
+   @font-face {
+       font-family: 'ProximaNova-Reg';
+       src: url('../fonts/ProximaNova-Reg-webfont.eot');
+       src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('eot'),
+            url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+            url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+            url('../fonts/ProximaNova-Reg-webfont.svg#webfont8vHlRqVr') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
+
+   body {
+      background: #d7d7cc;
+      color: #666666;
+      font-family: "ProximaNova-Reg", Tahoma, sans-serif;
+      line-height: 1.25;
+   }
+
+   img {
+   	max-width: 100%; 
+   }
+
+   .container {
+      background: url(../images/body-bg.jpg) #f9f9f9;
+      overflow: hidden;
+      padding-top: 2em;
+   }
+
+   .wrapper {
+      margin: 0 auto;
+      max-width: 894px;
+      width: 90%;
+   }
+
+   .spaced-list {
+      margin: 1em 0;
+   }
+
+   .spaced-list-item {
+      margin-bottom: 1em;
+   }
+
+   .medium-text {
+      font-family: "AdelleBasicBold", Georgia, serif;
+      font-size: 1em;
+   }
+
+   .thumb-link {
+      color: #8c8c6e;
+      display: block;
+      margin: 1em 0;
+      text-decoration: none;
+   }
+
+/* =========================================================================
+	HEADER
+   ====================================================================== */
+
+   header {
+      margin: 2em auto;
+      text-align: center;
+      width: 96%; 
+   }
+
+/* =========================================================================
+	MAIN
+   ====================================================================== */
+
+   .primary,
+   .secondary {
+      margin: 2em 0;
+   }
+
+/* =========================================================================
+	FOOTER
+   ====================================================================== */
+
+   footer {
+      overflow: hidden;
+   }
+
+   footer:before {
+      background: url(../images/footer-before.png) repeat-x;
+      content: "";
+      display: block;
+      height: 3px;
+      width: 100%;
+   }
+
+   footer .wrapper {
+      padding: 1.5em 0;
+   }
+
+   .thumb-link {
+      font-size: .8em;
+      float: left;
+      width: 50%;
+   }
+
+   .thumb-link:hover {
+      color: #94b2c6;
+   }
+
+   .thumb-link img,
+   .thumb-link span {
+      float: left;
+   }
+
+   .thumb-link span {
+      margin: 3px 0 0 5px;
+   }
+
+
+/* =========================================================================
+   Min-width 480px
+   ====================================================================== */
+   
+   @media only screen and (min-width: 480px) {
+
+      .thumb-link {
+         font-size: 1em;
+         width: 50%;
+      }
+
+   }  
+
+/* =========================================================================
+   Min-width 768px
+   ====================================================================== */
+   
+   @media only screen and (min-width: 768px) {
+
+      .main {
+         overflow: hidden;
+      }
+
+      .primary {
+         float: right;
+         width: 60%;
+      }
+
+      .secondary {
+         float: left;
+         width: 40%;
+      }
+
+      .spaced-list-item {
+         margin-bottom: .75em;
+      }
+
+      .medium-text {
+         font-size: 1.5em;
+      }
+
+      .fixed-width-p {
+         font-size: 1.2em;
+         max-width: 90%;
+      }
+
+      footer {
+         text-align: center;
+      }
+
+      .thumb-link {
+         display: inline-block;
+         float: none;
+         margin-right: 2em;
+         width: auto;
+      }
+
+   }  
+
+/* =========================================================================
+   Min-width 1024px
+   ====================================================================== */
+   
+   @media only screen and (min-width: 1024px) {
+      
+      .primary {
+         width: 65%;
+      }
+
+      .secondary {
+         text-align: right;
+         width: 35%;
+      }
+
+   }  
